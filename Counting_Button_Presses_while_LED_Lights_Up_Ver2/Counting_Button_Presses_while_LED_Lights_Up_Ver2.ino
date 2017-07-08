@@ -25,7 +25,7 @@ while( millis()-time < 300) {
     if (buttonState == LOW){
       count = count + 1;
     }
-  }
+  } preButtonState = buttonState;
 } digitalWrite(ledPin, LOW);
   delay(10);
 
